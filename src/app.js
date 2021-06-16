@@ -14,6 +14,7 @@ const hbs = require('hbs')
 const app = express()
 //  TODO=> Define paths for express config
 
+const port = process.env.PORT || 3000
 const publicDirectorypath = path.join(__dirname, '../public')
 const viewsFolderPath = path.join(__dirname, '../templates/views')
 const partialsFolderPath = path.join(__dirname, '../templates/partials')
@@ -112,6 +113,6 @@ app.get('*', (req, res) => {
 
 // TODO=> run express need to create a server and it will localy listen on port 3000
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port + '.')
 })

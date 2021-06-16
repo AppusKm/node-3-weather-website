@@ -4,7 +4,7 @@
   "description": "first express project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "author": "Midhulesh",
   "license": "ISC",
